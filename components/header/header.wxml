@@ -1,0 +1,6 @@
+<!--components/header/header.wxml-->
+  <view class="header" style="background:{{ bgColor }}">
+    <text class="icon-home" bindtap="goHome"></text>
+    {{header.title}}
+    <text class="right icon-refresh" bindtap="reload"></text>
+  </view>
