@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "index",
+  "usingComponents": {
+    "component-header": "/components/header/header",
+    "component-footer": "/components/footer/footer"
+  }
+}

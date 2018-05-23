@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?t4eu0');
+  src:  url('fonts/icomoon.eot?t4eu0#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?t4eu0') format('truetype'),
+    url('fonts/icomoon.woff?t4eu0') format('woff'),
+    url('fonts/icomoon.svg?t4eu0#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-users:before {
+  content: "\e90c";
+}
+.icon-user:before {
+  content: "\e90a";
+}
+.icon-refresh:before {
+  content: "\e90b";
+}
+.icon-close:before {
+  content: "\e909";
+}
+.icon-edit:before {
+  content: "\e907";
+}
+.icon-Delete:before {
+  content: "\e908";
+}
+.icon-checkbox:before {
+  content: "\e905";
+}
+.icon-wechat:before {
+  content: "\e906";
+}
+.icon-data:before {
+  content: "\e904";
+}
+.icon-like:before {
+  content: "\e900";
+}
+.icon-love:before {
+  content: "\e901";
+}
+.icon-search:before {
+  content: "\e902";
+}
+.icon-home:before {
+  content: "\e903";
+}
