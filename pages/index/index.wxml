@@ -1,5 +1,47 @@
-<!--index.wxml-->
-<view class="container">
-<!-- <component-header></component-header> -->
-<component-footer></component-footer>
+<view class="index">
+  <view class="topNav">
+    <view class="swiper">
+        <div class="searchWrap">
+          <input class="search" bindinput="search"></input>
+        </div>
+<swiper indicator-dots="{{indicatorDots}}" indicator-color="{{indicatorColor}}" indicator-active-color="{{indicatorActiveColor}}">
+        <block wx:for="{{6}}" >
+          <swiper-item>
+            <image src="../../assets/index/banner.png" mode="scaleToFill"/>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class="navList">
+      <ul>
+        <li wx:for="{{navList}}" wx:for-item="nav" wx:for-index="index" wx:key="index" bindtap="go" data-url="{{nav.name}}">
+          <image src="../../assets/index/{{nav.img}}.png"/>
+          <!-- <img :src="require('../assets/index/'+nav.img+'.png')" alt=""> -->
+          <text>{{nav.content}}</text>
+        </li>
+      </ul>
+    </view>
+  </view>
+  <view class="section">
+    <ul>
+      <li class="main clear" wx:for="{{mainList}}" wx:for-item="main" wx:for-index="index" wx:key="index">
+        <view class="topLine clear">
+          <view class="title left" style="color:{{main.topLine.color}}">
+            <image class="icon" src="../../assets/index/{{main.topLine.img}}.png"/>
+            {{main.topLine.title}}
+          </view>
+          <span class="more right" bindtap="go" data-url="{{main.name}}">
+            查看更多
+            <i class="icon-more"></i>
+          </span>
+        </view>
+        <view class="mainItem left" wx:for="{{main.main}}" wx:for-index="idx" wx:key="idx" bindtap="go" data-url="{{item.name}}">
+          <view class="item">
+            <image src="../../assets/index/{{item.img}}.png"/>
+            <p class="desc">{{item.content}}</p>
+          </view>
+        </view>
+      </li>
+    </ul>
+  </view>
 </view>

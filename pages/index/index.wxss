@@ -1,21 +1,119 @@
-/**index.wxss**/
-.userinfo {
+.index .topNav .swiper {
+  height: 347.22222222rpx;
+  width: 100%;
+  background: #ccc;
+  position: relative;
+}
+.index .topNav .swiper swiper {
+  height: 100%;
+}
+.index .topNav .swiper image {
+  width: 100%;
+  height: 100%;
+}
+.index .topNav .swiper .searchWrap {
+  position: absolute;
+  width: 100%;
+  padding: 23.61111111rpx 20.83333333rpx 0;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.index .topNav .swiper .swiper-pagination {
+  position: absolute;
+  display: inline-block;
+  bottom: 20.83333333rpx;
+  right: 20.83333333rpx;
+  width: auto !important;
+  left: auto !important;
+}
+.index .topNav .swiper .swiper-pagination .swiper-pagination-bullet {
+  width: 18.05555556rpx;
+  height: 18.05555556rpx;
+}
+.index .topNav .swiper .swiper-pagination .swiper-pagination-bullet + .swiper-pagination-bullet {
+  margin-left: 12.5rpx;
+}
+.index .topNav .swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #91d9ff;
+}
+.index .topNav .navList {
+  padding: 0 20.83333333rpx;
+  height: 200.69444444rpx;
+  border-bottom: 0.69444444rpx solid #999;
+  /*no*/
+  background: #fff;
+}
+.index .topNav .navList ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.index .topNav .navList ul li {
+  flex: 1;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20.83333333rpx 0 18.05555556rpx;
+  font-size: 22.22222222rpx;
+  color: #333;
 }
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.index .topNav .navList ul li image {
+  width: 130.55555556rpx;
+  height: 130.55555556rpx;
+  display: block;
+  margin-bottom: 11.11111111rpx;
 }
-
-.userinfo-nickname {
-  color: #aaa;
+.index .section {
+  margin-top: 20.83333333rpx;
+  border-top: 0.69444444rpx solid #999;
+  /*no*/
+  background: #fff;
+  width: 100%;
+  padding-top: 6.94444444rpx;
 }
-
-.usermotto {
-  margin-top: 200px;
+.index .section .main {
+  border-bottom: 0.69444444rpx solid #dcdcdc;
+  /*no*/
+  padding: 0 20.83333333rpx 30.55555556rpx;
+}
+.index .section .main .topLine {
+  height: 83.33333333rpx;
+  width: 100%;
+  line-height: 83.33333333rpx;
+}
+.index .section .main .topLine .title {
+  font-size: 33.33333333rpx;
+  font-weight: bold;
+}
+.index .section .main .topLine .title image {
+  width: 41.66666667rpx;
+  height: 41.66666667rpx;
+  display: inline-block;
+  transform: translateY(6.94444444rpx);
+}
+.index .section .main .topLine .more {
+  font-size: 22.22222222rpx;
+  color: #999;
+}
+.index .section .main .mainItem:nth-child(2n-1) {
+  float: right;
+}
+.index .section .main .mainItem .item {
+  width: 340.27777778rpx;
+  border: 0.69444444rpx solid #dcdcdc;
+  /*no*/
+}
+.index .section .main .mainItem .item image {
+  width: 100%;
+  display: block;
+}
+.index .section .main .mainItem .item p {
+  font-size: 25rpx;
+  color: #333;
+  line-height: 55.55555556rpx;
+  text-align: center;
 }
