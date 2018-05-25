@@ -1,0 +1,103 @@
+.user {
+  width: 100%;
+  height: 100%;
+  background: #eee;
+  position: relative;
+}
+.user .userInfo {
+  padding: 0 54.16666667rpx;
+  width: 100%;
+  height: 333.33333333rpx;
+  background-size: 100% 100%;
+  border: 0.69444444rpx solid transparent;
+}
+.user .userInfo .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 333.33333333rpx;
+}
+.user .userInfo .bg image {
+  width: 100%;
+  height: 100%;
+}
+.user .userInfo .portrait {
+  width: 202.08333333rpx;
+  height: 202.08333333rpx;
+  border-radius: 50%;
+  border: 6.94444444rpx solid #0d82e0;
+  background-size: cover;
+  margin: 13.88888889rpx auto;
+  position: relative;
+  z-index: 9;
+  overflow: hidden;
+}
+.user .userInfo .name {
+  position: relative;
+  z-index: 9;
+  line-height: 23.61111111rpx;
+  font-size: 30.55555556rpx;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+}
+.user .userInfo .detail {
+  position: relative;
+  z-index: 9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48.61111111rpx;
+  margin-top: 13.88888889rpx;
+}
+.user .userInfo .detail .item {
+  height: 100%;
+  flex: 1;
+  text-align: center;
+  line-height: 48.61111111rpx;
+  color: #fff;
+  font-size: 26.38888889rpx;
+}
+.user .userInfo .detail .item + .item {
+  border-left: 0.69444444rpx solid #3187cc;
+}
+.user .userInfo .detail .item:not(:last-child) {
+  border-right: 0.69444444rpx solid #b1ddff;
+}
+.user .lists {
+  margin-top: 30.55555556rpx;
+}
+.user .lists .list {
+  width: 100%;
+  height: 133.33333333rpx;
+  border-top: 0.69444444rpx solid #d3d3d3;
+  border-bottom: 0.69444444rpx solid #d3d3d3;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 26.38888889rpx;
+}
+.user .lists .list + .list {
+  margin-top: 13.88888889rpx;
+}
+.user .lists .list .num > span {
+  display: inline-block;
+  box-sizing: content-box;
+  padding: 0 2.77777778rpx;
+  line-height: 38.19444444rpx;
+  min-width: 38.19444444rpx;
+  height: 38.19444444rpx;
+  font-size: 26.38888889rpx;
+  background: #188fff;
+  border-radius: 38.19444444rpx;
+  text-align: center;
+  color: #fff;
+}
+.user .lists .list .num > text {
+  font-size: 27.77777778rpx;
+  display: inline-block;
+  transform: translateY(2.08333333rpx);
+  color: #7d8a8b;
+}

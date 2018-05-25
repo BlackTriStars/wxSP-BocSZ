@@ -1,0 +1,106 @@
+@rem: 750/1080rpx;
+.user {
+  width: 100%;
+  height: 100%;
+  background: #eee;
+  position: relative;
+  .userInfo {
+    padding: 0 78*@rem;
+    width: 100%;
+    height: 480*@rem; // background: url(../../assets/user/userBg.png) no-repeat;
+    background-size: 100% 100%;
+    border: 1*@rem solid transparent;
+    .bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 480*@rem;
+      image {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .portrait {
+      width: 291*@rem;
+      height: 291*@rem;
+      border-radius: 50%;
+      border: 10*@rem solid #0d82e0;
+      background-size: cover;
+      margin: 20*@rem auto;
+      position: relative;
+      z-index: 9;
+      overflow: hidden;
+    }
+    .name {
+      position: relative;
+      z-index: 9;
+      line-height: 34*@rem;
+      font-size: 44*@rem;
+      font-weight: bold;
+      text-align: center;
+      color: #fff;
+    }
+    .detail {
+      position: relative;
+      z-index: 9;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 70*@rem;
+      margin-top: 20*@rem;
+      .item {
+        height: 100%;
+        flex: 1;
+        text-align: center;
+        line-height: 70*@rem;
+        color: #fff;
+        font-size: 38*@rem;
+        &+.item {
+          border-left: 1*@rem solid #3187cc;
+        }
+        &:not(:last-child) {
+          border-right: 1*@rem solid #b1ddff;
+        }
+      }
+    }
+  }
+  .lists {
+    margin-top: 44*@rem;
+    .list {
+      width: 100%;
+      height: 192*@rem;
+      border-top: 1*@rem solid #d3d3d3;
+      border-bottom: 1*@rem solid #d3d3d3;
+      background: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 38*@rem;
+      &+.list {
+        margin-top: 20*@rem;
+      }
+      .num {
+        &>span {
+          display: inline-block;
+          box-sizing: content-box;
+          padding: 0 4*@rem;
+          line-height: 55*@rem;
+          min-width: 55*@rem;
+          height: 55*@rem;
+          font-size: 38*@rem;
+          background: #188fff;
+          border-radius: 55*@rem;
+          text-align: center;
+          color: #fff;
+        }
+        &>text {
+          font-size: 40*@rem;
+          display: inline-block;
+          transform: translateY(3*@rem);
+          color: #7d8a8b;
+        }
+      }
+    }
+  }
+}

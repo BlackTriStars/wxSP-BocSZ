@@ -1,3 +1,4 @@
+import config from '../../config/constant.js'
 Page({
   data: {
     navList: [
@@ -102,7 +103,8 @@ Page({
     ],
     indicatorDots: true,
     indicatorColor: 'rgba(255,255,255,.8)',
-    indicatorActiveColor: '#91d9ff'
+    indicatorActiveColor: '#91d9ff',
+    imgSrc: config.imgSrc
   },
   onLoad: function () {
 

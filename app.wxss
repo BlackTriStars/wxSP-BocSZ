@@ -5,7 +5,9 @@ view {
 page {
   background: #f7f8fb;
 }
-
+view{
+  box-sizing: border-box;
+}
 .container {
   height: 100%;
   display: flex;

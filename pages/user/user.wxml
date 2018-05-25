@@ -1,0 +1,33 @@
+<view class="user">
+  <view class="userInfo">
+    <view class="bg">
+      <image src="{{imgSrc}}/assets/user/userBg.png" />
+    </view>
+    <view class="portrait">
+      <!-- <image class="portraitImg" src="{{userInfo.img}}"/> -->
+      <open-data class="portraitImg" type="userAvatarUrl"></open-data>
+    </view>
+    <view class="name">
+    <open-data type="userNickName" lang="zh_CN"></open-data>
+    </view>
+    <view class="detail">
+      <view class="item" wx:for="{{userInfo.detail}}" wx:key="index">
+        {{item.title}} {{item.value}}
+      </view>
+    </view>
+  </view>
+  <view class="lists">
+<view class="list" wx:for="{{list}}" wx:key="index" wx:for-item="list" bindtap="go" data-name="{{list.name}}">
+      <p class="title">
+        <text>
+          <image src="{{list.img}}" />
+        </text>
+        {{list.title}}
+      </p>
+      <view class="num">
+        <span>{{list.num}}</span>
+        <text class="icon-more"></text>
+      </view>
+    </view>
+  </view>
+</view>

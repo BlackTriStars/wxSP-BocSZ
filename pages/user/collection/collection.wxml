@@ -1,0 +1,39 @@
+<!--pages/user/collection/collection.wxml-->
+<view id="collection">
+  <view class="editWrap" hidden="{{canEdit}}">
+    <view class="btn" bindtap="canEdit = true">编辑</view>
+  </view>
+  <view class="main" class="{{canEdit?'edit':''}}">
+    <view class="item" wx:for="{{list}}" wx:key="index">
+<view class="select" bindtap="select(index)" class="{{item.select?'active':''}}" hidden="{{!canEdit}}">
+        <text class="icon-checkbox"></text>
+      </view>
+      <view class="img">
+        <!-- <img :src="item.img" alt=""> -->
+        <image src="{{item.img}}"/>
+      </view>
+      <view class="detail">
+        <view class="title">{{item.title}}</view>
+        <view class="p">{{item.content}}</view>
+        <view class="data">
+          <text wx:for="{{item.data}}" wx:for-item="v" wx:for-index="i" wx:key="i">
+            <text class="icon-{{v.name}}"></text>
+            {{v.value}}
+          </text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="btnWrap" hidden="{{!canEdit}}">
+    <view class="delete" bindtap="del">
+      <text class="icon-Delete">
+        删除
+      </text>
+    </view>
+    <view class="cancel" bindtap="canEdit= false;">
+      <text class="icon-edit">
+        取消
+      </text>
+    </view>
+  </view>
+</view>
